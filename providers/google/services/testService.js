@@ -1,8 +1,6 @@
 "use strict"
 var GoogleService = require('./GoogleService.js');
-
 var service = new GoogleService();
-
 
 
 /*authorize.getAuth(function(auth){
