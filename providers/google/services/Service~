@@ -1,0 +1,11 @@
+class Service { 
+  constructor(name) {
+    this.name = name;
+  }
+  
+  getProfileGroups() {}
+  
+  getGroupMembers(groupId) {}
+
+}
+export default class Service {}
