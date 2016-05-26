@@ -20,9 +20,8 @@ go get github.com/linnovate/service-providers
 Create a new node file, and in your `code`:
 
 ```javascript
-
 "use strict"
-var GoogleService = require('./GoogleService.js');
+var GoogleService = require('service-providers');
 var service = new GoogleService();
 
 
