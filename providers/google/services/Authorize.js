@@ -11,7 +11,7 @@
   var SCOPES = ['https://www.googleapis.com/auth/admin.directory.group'];
 
   //This is where the token that that Google gives back to us gets saved by this app
-  var TOKEN_DIR = './tokens/';
+  var TOKEN_DIR = __dirname + '/tokens/';
   var TOKEN_PATH = TOKEN_DIR + 'admin-directory_v1-nodejs-quickstart.json';
 
 class Authorize { 
@@ -21,7 +21,7 @@ class Authorize {
     getAuth(callback) {
 
     
-      fs.readFile('client_secret.json', function processClientSecrets(err, content) {
+      fs.readFile(__dirname + '/client_secret.json', function processClientSecrets(err, content) {
           if (err) {
             console.log('Error loading client secret file: ' + err);
             return;
