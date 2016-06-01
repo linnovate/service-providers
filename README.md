@@ -23,7 +23,7 @@ Create a new node file, and in your `code`:
 "use strict"
 
 var GoogleService = require('service-providers')('google');
-var service = new GoogleService(config.strategies.google.clientSecret, config.strategies.google.clientID, config.strategies.google.callbackURL);
+var service = new GoogleService(yourClientSecret, yourClientID, yourCallbackURL);
 
 service.sdkManager('members', 'list', {
     // groupKey: 'group@example.com',
