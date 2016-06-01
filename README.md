@@ -21,22 +21,20 @@ Create a new node file, and in your `code`:
 
 ```javascript
 "use strict"
-var GoogleService = require('service-providers');
-var service = new GoogleService();
 
+var GoogleService = require('service-providers')('google');
+var service = new GoogleService(config.strategies.google.clientSecret, config.strategies.google.clientID, config.strategies.google.callbackURL);
 
-/*authorize.getAuth(function(auth){
-	service.getGroups(auth,function(err,list){
-		console.log(list ,err );
-});*/
-
-
-service.authorize.getAuth(function(auth){
-	service.getGroupMembers(auth,function(err,list){
-		 console.log(list,err );
-		},"bi@linnovate.net");
-	});
-
+service.sdkManager('members', 'list', {
+    // groupKey: 'group@example.com',
+    // memberKey: 'member@example.com',
+    // resource: {
+    //     "email": "rivkat@linnovate.net",
+    //     "role": "MEMBER"
+    // }
+}, function(err, list) {
+    console.log(list, err);
+})
 
 ```
 
