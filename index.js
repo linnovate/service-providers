@@ -1,3 +1,6 @@
-var providers = ['google','microsoft','custom'];
-var activeProvider = 'google'; // TODO take from config
-module.exports = require(__dirname + '/providers/' + activeProvider + '/services/index.js');
+'use strict'
+var providers = ['google', 'microsoft', 'custom'];
+
+module.exports = function(activeProvider) {
+	return require(__dirname + '/providers/' + activeProvider + '/services');
+};
