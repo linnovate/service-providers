@@ -4,21 +4,22 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node GoogleService.js --presets es2015,stage-2",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "es6-module-loader": "^0.17.11",
     "google-auth-library": "^0.9.8",
-    "googleapis": "^7.0.0"
+    "googleapis": "^7.0.0",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-2": "^6.5.0"
   },
-"scripts": {
-  "start": "babel-node GoogleService.js --presets es2015,stage-2"
-  }
+  "snyk": true
 }
