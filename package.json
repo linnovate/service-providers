@@ -11,7 +11,7 @@
   "dependencies": {
     "es6-module-loader": "^0.17.11",
     "google-auth-library": "^0.9.8",
-    "googleapis": "^7.0.0"
+    "googleapis": "^59.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
