@@ -10,8 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "es6-module-loader": "^0.17.11",
-    "google-auth-library": "^0.9.8",
-    "googleapis": "^7.0.0"
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^26.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
